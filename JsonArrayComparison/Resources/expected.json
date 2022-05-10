@@ -1,0 +1,26 @@
+[
+  {
+    "key": "Object 5",
+    "property 1": 2.4,
+    "hack": {
+      "nestedProp": 2.3,
+      "other": 2.9
+    }
+  },
+  {
+    "key": "Object 1",
+    "property 1": 2.2,
+    "hack": {
+      "nestedProp": 2.3,
+      "other": 2.9
+    }
+  },
+  {
+    "key": "Object 7",
+    "property 1": 2.4,
+    "hack": {
+      "nestedProp": 2.3,
+      "other": 2.9
+    }
+  }
+]

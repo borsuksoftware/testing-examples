@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>BorsukSoftware.Testing.Examples.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\actual.json" />
+    <None Remove="Resources\expected.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\actual.json" />
+    <EmbeddedResource Include="Resources\expected.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BorsukSoftware.ObjectFlattener.Core" Version="1.0.2" />
+    <PackageReference Include="BorsukSoftware.ObjectFlattener.JsonDotNet" Version="1.0.2" />
+    <PackageReference Include="BorsukSoftware.Testing.Comparison.Extensions.Collections" Version="1.0.4" />
+  </ItemGroup>
+
+</Project>
