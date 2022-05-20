@@ -46,7 +46,7 @@ namespace BorsukSoftware.Testing.Examples.JsonArrayComparison
 			// If you were flattening .net objects, you'd use the following
 			// objectFlattener.Plugins.Add(new BorsukSoftware.ObjectFlattener.Plugins.StandardPlugin());
 
-			var setComparer = new BorsukSoftware.Testing.Comparison.Extensions.Collections.ObjectSetComparer(objectFlattener, underlyingComparer);
+			var setComparer = new BorsukSoftware.Testing.Comparison.Extensions.Collections.ObjectSetComparerStandard(objectFlattener, underlyingComparer);
 
 			// Note that expected / actual implement IEnumerable<JToken> hence we perform the comparison on a JToken (JObjects are a child class)
 			var results = setComparer.CompareObjectSets<Newtonsoft.Json.Linq.JToken>((idx, jobject) =>
@@ -62,14 +62,14 @@ namespace BorsukSoftware.Testing.Examples.JsonArrayComparison
 				actual);
 
 			// Output the results
-			Console.WriteLine($"Matching items - {results.MatchingKeysCount}");
+			Console.WriteLine($"Matching items - {results.MatchingObjects.Count}");
 			Console.WriteLine($"Additional items - {results.AdditionalKeys.Count}");
 			if(results.AdditionalKeys.Count > 0)
 			{
 				foreach( var key in results.AdditionalKeys)
 				{
 					Console.WriteLine(" Item:");
-					foreach (var pair in key)
+					foreach (var pair in key.Key)
 						Console.WriteLine($" - {pair.Key} = {pair.Value}");
 				}
 			}
@@ -83,7 +83,7 @@ namespace BorsukSoftware.Testing.Examples.JsonArrayComparison
 						Console.WriteLine($" - {pair.Key} = {pair.Value}");
 
 					Console.WriteLine(" Diffs:");
-					foreach( var pair in key.Value)
+					foreach( var pair in key.Value.Differences)
 					{
 						Console.WriteLine($" - {pair.Key}: {pair.Value.ExpectedValue} vs. {pair.Value.ActualValue}");
 					}

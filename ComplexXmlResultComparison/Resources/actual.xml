@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<message>
+	<header>
+
+	</header>
+	<requests>
+		<request key="Vanilla-Put-EURGBP-1M-ATM">
+			<inputs>
+				<type>Vanilla</type>
+				<style>Put</style>
+				<notional>10000000</notional>
+				<expiry>1M</expiry>
+				<strike>ATM</strike>
+			</inputs>
+			<risks>
+				<fxDelta ccy="GBP" value="2342.2" />
+				<fxDelta ccy="EUR" value="1342.3" />
+				<value ccy="GBP" value="1000.1" />
+				<fxVega ccyPair="EURGBP" expiry="2022-06-19" ccy="GBP" value="234.2"/>
+			</risks>
+		</request>
+
+		<request key="Vanilla-Put-EURGBP-2M-ATM">
+			<inputs>
+				<type>Vanilla</type>
+				<style>Put</style>
+				<notional>10000000</notional>
+				<expiry>2M</expiry>
+				<strike>ATM</strike>
+			</inputs>
+			<risks>
+				<fxDelta ccy="GBP" value="23452.2" />
+				<fxDelta ccy="EUR" value="134232.2" />
+				<value ccy="GBP" value="100012.1" />
+				<fxVega ccyPair="EURGBP" expiry="2022-07-19" ccy="GBP" value="179" />
+			</risks>
+		</request>
+
+		<request key="Vanilla-Put-EURGBP-3M-ATM">
+			<inputs>
+				<type>Vanilla</type>
+				<style>Put</style>
+				<notional>10000000</notional>
+				<expiry>3M</expiry>
+				<strike>ATM</strike>
+			</inputs>
+			<risks>
+				<fxDelta ccy="GBP" value="23452.2" />
+				<fxDelta ccy="EUR" value="134232.2" />
+				<value ccy="GBP" value="100012.1" />
+				<fxVega ccyPair="EURGBP" expiry="2022-08-19" ccy="GBP" value="214" />
+			</risks>
+		</request>
+
+		<request key="Vanilla-Put-EURGBP-6M-ATM">
+			<inputs>
+				<type>Vanilla</type>
+				<style>Put</style>
+				<notional>10000000</notional>
+				<expiry>3M</expiry>
+				<strike>ATM</strike>
+			</inputs>
+			<risks>
+				<fxDelta ccy="GBP" value="23452.2" />
+				<fxDelta ccy="EUR" value="134232.2" />
+				<value ccy="GBP" value="100012.1" />
+				<fxVega ccyPair="EURGBP" expiry="2022-11-19" ccy="GBP" value="214" />
+			</risks>
+		</request>
+
+		<request key="Vanilla-Put-EURGBP-12M-ATM">
+			<inputs>
+				<type>Vanilla</type>
+				<style>Put</style>
+				<notional>10000000</notional>
+				<expiry>3M</expiry>
+				<strike>ATM</strike>
+			</inputs>
+			<risks>
+				<fxDelta ccy="GBP" value="23452.2" />
+				<fxDelta ccy="EUR" value="134232.2" />
+				<value ccy="GBP" value="100012.1" />
+				<fxVega ccyPair="EURGBP" expiry="2023-05-19" ccy="GBP" value="214" />
+			</risks>
+		</request>
+
+		<request key="Vanilla-Put-EURGBP-12M-ATM">
+			<inputs>
+				<type>Vanilla</type>
+				<style>Put</style>
+				<notional>10000000</notional>
+				<expiry>3M</expiry>
+				<strike>ATM</strike>
+			</inputs>
+			<risks>
+				<fxDelta ccy="GBP" value="23452.2" />
+				<fxDelta ccy="EUR" value="134232.2" />
+				<value ccy="GBP" value="100012.1" />
+				<fxVega ccyPair="EURGBP" expiry="2023-05-19" ccy="GBP" value="214" />
+			</risks>
+		</request>
+	</requests>
+</message>

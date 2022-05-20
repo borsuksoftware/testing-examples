@@ -19,7 +19,7 @@
   <ItemGroup>
     <PackageReference Include="BorsukSoftware.ObjectFlattener.Core" Version="1.0.2" />
     <PackageReference Include="BorsukSoftware.ObjectFlattener.JsonDotNet" Version="1.0.2" />
-    <PackageReference Include="BorsukSoftware.Testing.Comparison.Extensions.Collections" Version="1.0.4" />
+    <PackageReference Include="BorsukSoftware.Testing.Comparison.Extensions.Collections" Version="1.0.5" />
   </ItemGroup>
 
 </Project>

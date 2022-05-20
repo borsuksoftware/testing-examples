@@ -3,5 +3,7 @@
 ################################################################################
 
 /.vs
+/ComplexXmlResultComparison/obj
+/ComplexXmlResultComparison/bin
 /JsonArrayComparison/bin
 /JsonArrayComparison/obj
